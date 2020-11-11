@@ -6,7 +6,13 @@ A pure Python poker hand evaluation library
     [ 2 ❤ ] , [ 2 ♠ ]
 	
 
-updated for python3 now (20201025)!
+* update 20201111:
+	- adjust position of color pkgs to avoid to import them frequently
+
+* update 20201025:
+	- compatablity for python3
+	- add print plain cards
+	- add two card lookup and evaluation
     
 ## Installation
 
@@ -20,12 +26,10 @@ then copy deuces/*.py from this repo to recover the files in your computer
 
 Deuces, originally written for the MIT Pokerbots Competition, is lightweight and fast. All lookups are done with bit arithmetic and dictionary lookups. That said, Deuces won't beat a C implemenation (~250k eval/s) but it is useful for situations where Python is required or where bots are allocated reasonable thinking time (human time scale).
 
-Deuces handles 5, 6, and 7 card hand lookups. The 6 and 7 card lookups are done by combinatorially evaluating the 5 card choices, but later releases may have dedicated and faster algorithms for these. 
+Deuces handles 5, 6, and 7 card hand lookups. The 6 and 7 card lookups are done by combinatorially evaluating the 5 card choices, but later releases may have dedicated and faster algorithms for these. and 2 card lookups has added now(20201025)
 
-2 card lookups has added now(20201025)
+See my blog for an explanation of how the library works and how the lookup table generation is done: http://willdrevo.com/ 
 
-See my blog for an explanation of how the library works and how the lookup table generation is done:
-http://willdrevo.com/ 
 
 ## Usage
 
